@@ -1,0 +1,63 @@
+<html>
+    <head><title>CRUD</title>
+      <style>
+        .table{
+            color:#fff;
+            background-color: rgb(27, 26, 26);
+            padding:30px;
+            border-radius: 3px;
+        }
+        .btn{
+            background-color: green;
+            border:none;
+            border-radius: 3px;
+        }
+        .btn1{
+            background-color: red;
+            border: none;
+            border-radius: 3px;
+        }
+      </style>
+    </head>
+    <body>
+        <div class="container">
+
+       <h2><%= title %></h2>
+       <a href="/add" class="btn btn-sm btn-primary">Add User</a><br><br>
+       <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                &nbsp; &nbsp;
+                <th>firstName</th>
+                &nbsp;
+                <th>lastName</th>
+                &nbsp;
+                <th>email</th>
+                &nbsp;
+                <th>passWord</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% user.forEach(function(user){ %>
+                <tr>
+                    <td><%= user.user_id %></td>
+                    &nbsp;
+                    <td><%= user.firstName %></td>
+                    &nbsp;
+                    <td><%= user.lastName %></td>
+                    &nbsp;
+                    <td><%= user.email %></td>
+                    &nbsp;
+                    <td><%= user.passWord %></td>
+                    <td>
+                        <a" href="edit/<%= user.id %>" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="delete/<%= user.id %>" class="btn1 btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+       </table>
+       </div>
+    </body>
+</html>

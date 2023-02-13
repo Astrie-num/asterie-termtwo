@@ -1,0 +1,139 @@
+<html>
+    <head><title>CRUD</title>
+      <!-- <style>
+        .table{
+            color:#fff;
+            background-color: rgb(27, 26, 26);
+            padding:30px;
+            border-radius: 3px;
+        }
+        .btn{
+            background-color: green;
+            border:none;
+            border-radius: 3px;
+        }
+        .btn1{
+            background-color: red;
+            border: none;
+            border-radius: 3px;
+        }
+      </style> -->
+    </head>
+    <body>
+        <div class="container">
+
+       <h2><%= title %></h2>
+       <!-- <a href="/add" class="btn btn-sm btn-primary">Add User</a><br><br> -->
+       <form action="/save" method="post">
+        <div class="form-group">
+            <label for="firstName">Firstname:</label><br>
+            <input type="text" class="form-control" id="firstName" placeholder="firstname" name="firstName" required><br>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Lastname:</label><br>
+            <input type="text"class="form-control" id="lastName" placeholder="lastname" name="lastName" required><br>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required><br>
+        </div>
+        <div class="form-group">
+            <label for="passWord">Password:</label><br>
+        <input type="passWord" class="form-control" id="passWord" placeholder="Password" name="passWord" required><br>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Register</button>
+       </form>
+       </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+    <head>
+        <title>
+            CRUD
+        </title>
+        <style>
+            body{
+                background-color: rgb(31, 32, 32);
+                color:white;
+            }
+            .container{
+                
+                color:white;
+                background-color: rgb(42, 48, 46);
+                border-radius: 5px;
+                height: auto;
+                width: 20%;
+                margin-left:30%;
+                padding:20px;
+                margin-top: 5%;
+                
+            }
+            .title{
+                margin-left: 30%;
+                margin-top: 10%;
+            }
+        </style>
+    </head>
+    <body>
+       <h2 class="title"><%= title %></h2>
+       <div class="container">
+       <form action="/save" method="post">
+        <div class="form-group">
+            <label for="firstname">Firstname:</label><br>
+            <input type="text" class="form-control" id="email" placeholder="firstname" name="firstname" required><br>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Lastname:</label><br>
+            <input type="text"class="form-control" id="email" placeholder="lastname" name="lastname" required><br>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="text" class="form-control" id="email" placeholder="Email" name="email" required><br>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label><br>
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password" required><br>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Register</button>
+       </form>
+      
+       </div>
+    </body>
+</html> -->
